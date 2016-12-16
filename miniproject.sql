@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 14, 2015 at 06:29 AM
+-- Generation Time: Jun 07, 2015 at 02:30 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -50,9 +50,7 @@ CREATE TABLE IF NOT EXISTS `company` (
 --
 
 INSERT INTO `company` (`username`, `comp_name`, `nat_busi`, `cont_pers`, `designation`, `address`, `phone_nmbr`, `email`, `on_exam`, `apt_exam`, `tech_exam`, `gd`, `tech_interv`, `prsnl_intrv`, `boi`) VALUES
-('', 'dsa', 'gbgfdvc', 'vc', 'vcxd', '           fevdcx                                        ', 1234567890, 'ctnidhin@gmail.com', 'no', 'no', 'yes', 'no', 'no', 'yes', 'no'),
-('ddd', 'dell', 'nn', 'kjkj', 'hkjh', 'jkhkjhjk                                                  ', 2147483647, 'ctnidhin@gmail.com', 'yes', 'no', 'no', 'no', 'no', 'yes', 'yes'),
-('hp', 'hp', 'mk', 'mk', 'mk', 'mkmkm                                                  ', 2147483647, 'ctnidhin@gmail.com', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes', 'yes');
+('', 'dsa', 'gbgfdvc', 'vc', 'vcxd', '           fevdcx                                        ', 1234567890, 'frenyclara@gmail.com', 'no', 'no', 'yes', 'no', 'no', 'yes', 'no');
 
 -- --------------------------------------------------------
 
@@ -72,8 +70,7 @@ INSERT INTO `download` (`file_name`) VALUES
 ('biodata.pdf'),
 ('nidhin.pdf'),
 ('freny.pdf'),
-('kir.pdf'),
-('seminarppt.pdf');
+('kir.pdf');
 
 -- --------------------------------------------------------
 
@@ -219,7 +216,9 @@ CREATE TABLE IF NOT EXISTS `student` (
 --
 
 INSERT INTO `student` (`username`, `stud`, `fath`, `dob`, `gender`, `categ`, `nation`, `college`, `branch`, `ten`, `twel`, `sg`, `coco`, `addr`, `dist`, `sta`, `mail`, `ph`) VALUES
-('nidhin', 'dfgh', 'fgh', 'dfgh', 'male', 'OBC', 'dfg', 'gh', 'ghj', 7, 8, 9, 'ghj', 'ghjk                                                  ', 'ghjk', 'ghjk', 'ctnidhin@gmail.com', 1234567890);
+('', 'dfgh', 'fgh', 'dfgh', 'male', 'OBC', 'dfg', 'gh', 'ghj', 7, 8, 9, 'ghj', 'ghjk                                                  ', 'ghjk', 'ghjk', 'ctnidhin@gmail.com', 1234567890),
+('', 'nidhin', 'kmk', '3/4/5223', 'male', 'as', 'asas', 'nk', 'nkjn', 7, 7, 7, '7', 'kh', 'ndns', '', 'frenyclara@gmail.com', 2147483647),
+('', 'nksjd', 'jnk', '9/3/4232', 'nskjns', 'mlk', 'mmk', 'kbj', 'kjbk', 8, 8, 8, '8', 'hkj', 'jlll', 'nkjnk', 'nidhinmohan330@gmail.com', 98582847);
 
 -- --------------------------------------------------------
 
@@ -232,7 +231,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(400) NOT NULL,
   `client_name` text NOT NULL,
   `client_status` text NOT NULL,
-  `email` varchar(40) NOT NULL,
   UNIQUE KEY `username` (`username`,`password`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -240,11 +238,14 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`username`, `password`, `client_name`, `client_status`, `email`) VALUES
-('1234', '12345678', 'de', 'c', 'ctnidhin@gmail.com'),
-('admin', 'admin', 'adminnnn', 'a', ''),
-('hp', '11111111', 'hp', 'c', 'ctnidhin@gmail.com'),
-('nidhin', '12345678', 'v', 's', 'ctnidhin@gmail.com');
+INSERT INTO `users` (`username`, `password`, `client_name`, `client_status`) VALUES
+('1234', '12345678', 'de', 'c'),
+('admin', 'admin', 'adminnnn', 'a'),
+('ds', '12345678', 'vw', 's'),
+('dsa', '12345678', 'vwd', 's'),
+('dsad', '12345678', 'vwds', 's'),
+('fdsa', '12345678', 'dsa', 'c'),
+('nidhin', '12345678', 'v', 's');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
